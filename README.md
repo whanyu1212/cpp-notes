@@ -24,3 +24,6 @@ sudo apt install gcc
 
 **Doxygen Documentation Generator:** 
 - Helps with docstring templating
+
+## Google C++ Style Guide
+`https://google.github.io/styleguide/cppguide.html`
