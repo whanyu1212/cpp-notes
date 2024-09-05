@@ -1,9 +1,10 @@
-#include <iostream>
+#include <iostream>  // include standard library header files
+using namespace std; // make names from std visible without std::, optional, but recommended
 
 int main()
 {
-    std::cout << "Hello, Programming!\n";
-    std::cout << "Here we go!\n";
+    cout << "Hello, Programming!\n";
+    cout << "Here we go!\n";
     return 0;
 }
 

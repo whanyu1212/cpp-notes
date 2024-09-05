@@ -12,7 +12,7 @@ using namespace std;
 vector<double> read_temperatures()
 {
     vector<double> temps = {23.5, 24.0, 24.5, 25.0, 25.5};
-    for (double temp; cin >> temp;)
+    for (double temp; cin >> temp;) // equivalent to: while(cin >> temp)
     {
         temps.push_back(temp);
     }
@@ -27,7 +27,7 @@ vector<double> read_temperatures()
  */
 double calculate_median(vector<double> &temps)
 {
-    size_t size = temps.size();
+    auto size = temps.size();
     if (size % 2 == 0)
     {
         // If even, average the two middle elements
@@ -36,7 +36,7 @@ double calculate_median(vector<double> &temps)
     else
     {
         // If odd, take the middle element
-        return temps[size / 2];
+        return temps[size / 2]; // automatically an integer division, decimal part is truncated
     }
 }
 
