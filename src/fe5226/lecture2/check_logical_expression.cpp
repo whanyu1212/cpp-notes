@@ -1,10 +1,13 @@
 #include <iostream>
 using namespace std;
 
+// Remark: For logical operators, && has precedence over ||
+
 int main()
 {
     int x;
     bool y;
+
     cout << "Enter an integer value: " << endl;
     cin >> x;
 

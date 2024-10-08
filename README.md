@@ -27,3 +27,10 @@ sudo apt install gcc
 
 ## Google C++ Style Guide
 `https://google.github.io/styleguide/cppguide.html`
+
+## Recommended Books
+- Programming: Principles and Practice Using C++, 3rd Edition
+- Professional C++, 6th Edition
+- A Tour of C++, 3rd Edition
+- Modern C++ Programming Cookbook, 3rd Edition
+- Hands-On Design Pattern with C++, 2nd Edition
