@@ -14,7 +14,7 @@ int main()
 
     for (int i = 0; i < totalNumbers; ++i)
     {
-        int randomNumber = rand();
+        int randomNumber = rand(); // if normalize, use rand() / RAND_MAX
         if (randomNumber >= lowerBound && randomNumber <= upperBound && randomNumber % divisor == 0)
         {
             count++;
