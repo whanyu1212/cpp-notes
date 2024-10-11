@@ -8,7 +8,7 @@ double scalarProduct(const double *x, double *y, size_t n)
     // implement the loop using pointer arithmetic
     // because we are not using index here, we cannot do x[i] and y[i] or *(x + i) and *(y + i)
     for (const double *end = x + n; x != end;) // loop until x reaches the end and the end = x + n
-        s += (*x++) * (*y++);
+        s += (*x++) * (*y++);                  // dereference x and y and increment x and y
     return s;
 }
 

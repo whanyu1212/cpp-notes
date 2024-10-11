@@ -2,6 +2,7 @@
 using namespace std;
 
 // *&x means x
+
 int main()
 {
     char y = 65;       // ASCII value of 'A'
