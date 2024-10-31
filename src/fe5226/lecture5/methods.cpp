@@ -16,8 +16,10 @@ public:
     Position(double x, double y) : m_x(x), m_y(y) {}
 
     // Accessor or Getter methods (make sure they are public)
-    double getX() { return m_x; } // read only public accessor
-    double getY() { return m_y; } // read only public accessor
+    // By setting the methods to const, we are telling the compiler that these methods
+    // do not modify the object's state
+    double getX() const { return m_x; }
+    double getY() const { return m_y; }
 
     void set(double x, double y)
     {
@@ -25,6 +27,15 @@ public:
         m_y = y;
     } // set new coordinates
 };
+
+// constant reference to the position object
+// this is a read-only reference
+
+void print(const char *name, const Position &p)
+{
+    // getX and getY are public and const methods, so they can be accessed from here
+    cout << name << "(" << p.getX() << "," << p.getY() << ")" << endl;
+}
 
 /*
 Encapsulation:
@@ -43,16 +54,7 @@ to modify it.
 
 int main()
 {
-    Position p1;    // p1 is an object of the struct Position
-    p1.set(10, 20); // set the coordinates of p1 to (10, 20)
-
-    // Access the coordinates of p1 using the accessor methods
-    std::cout << "Position p1: (" << p1.getX() << ", " << p1.getY() << ")\n";
-
-    Position p2(15, 25); // p2 is an object of the struct Position with coordinates (15, 25)
-
-    // Access the coordinates of p2 using the accessor methods
-    std::cout << "Position p2: (" << p2.getX() << ", " << p2.getY() << ")\n";
-
+    Position pos(3.0, 4.0);
+    print("Position", pos);
     return 0;
 }
