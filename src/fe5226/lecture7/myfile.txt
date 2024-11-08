@@ -1,0 +1,10 @@
+#include <fstream>
+#include <string>
+
+void appendToFile(const std::string &text) {
+    std::ofstream file("myfile.txt", std::ios::app);
+    if (file.is_open()) {
+        file << text;
+        file.close();
+    }
+}
