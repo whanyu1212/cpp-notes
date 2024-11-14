@@ -8,6 +8,7 @@ int main()
     array<int, 10> x;
 
     // type of i is array<int, 10>::iterator
+    // we use i as if it is a pointer to an element of the array
     for (array<int, 10>::iterator i = x.begin(); i != x.end(); ++i)
     {
         // assign a random number to the element pointed to by i

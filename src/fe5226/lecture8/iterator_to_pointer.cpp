@@ -2,6 +2,8 @@
 #include <array>
 using namespace std;
 
+// for array an iterator and a pointer are equivalent, we could convert
+// an iterator to a pointer, if we wanted to
 int main()
 {
     array<int, 10> x = {1, 2, 3};
