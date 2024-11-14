@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
+
 int main()
 {
     // or vector<int> x(10); to initialize with 10 elements

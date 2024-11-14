@@ -4,7 +4,11 @@ using namespace std;
 int main()
 {
     // 2nd argument omitted: use default allocator
+
     vector<int> x; // no need to specify size unlike array
+
+    // you can also do something like vector<int> x(4,10); // 4 elements with value 10
+
     for (size_t i = 0; i < 3; ++i)
         x.push_back(rand());  // append at the end, size increases (dynamic)
     cout << x.size() << endl; // print size
